@@ -1,21 +1,18 @@
 package il.ac.telhai.ds.heap;
 
-
-
-
 public class MinHeap<T extends Comparable<T>> {
 
 	private T[] data;
 	private int size;
 
-	// Ctor for empty array
+	// Constructor for empty array
 	@SuppressWarnings({"unchecked","rawtypes"})
 	public MinHeap(int length) {
 		data = (T[]) new Comparable[length + 1]; // For 1 based index
 		size = 0;
 	}
 
-	// Ctor from array
+	// Constructor from array
 	@SuppressWarnings({"unchecked","rawtypes"})
 	public MinHeap(T[] arr) {
 		size = arr.length;
